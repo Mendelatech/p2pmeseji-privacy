@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2P Meseji — Open Source Licenses</title>
+<link rel="icon" href="p2pmeseji-logo.png">
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.25rem; border-bottom: 1px solid #eee; padding-bottom: 0.25rem; }
+  .updated, .intro { color: #444; font-size: 0.95rem; }
+  a { color: #C4540A; }
+  footer { margin-top: 3rem; color: #888; font-size: 0.85rem; }
+  table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; font-size: 0.92rem; }
+  td, th { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+  th { color: #666; font-weight: 600; }
+  .site-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .site-header img { width: 44px; height: 44px; border-radius: 50%; display: block; }
+  .back-link { display: inline-block; margin-top: 1.5rem; }
+</style>
+</head>
+<body>
+  <div class="site-header">
+    <img src="mendelatech-chibi.png" alt="Mendelatech" width="44" height="44">
+    <a href="index.html">← Privacy Policy</a>
+  </div>
+
+  <h1>Open Source Licenses — P2P Meseji</h1>
+  <p class="updated">Last updated: September 24, 2026</p>
+  <p class="intro">P2P Meseji is built with the help of the following open source libraries. We're grateful to their authors and maintainers. Each one is used under the terms of its own license, linked below.</p>
+
+  <h2>BSD 3-Clause License</h2>
+  <table>
+    <tr><th>Library</th><th>Purpose in P2P Meseji</th></tr>
+    <tr><td>Tor (The Tor Project) via tor-android (Guardian Project)</td><td>Runs a Tor onion service on your device so contacts can reach you from any network. Bundled as native code, together with its dependencies (OpenSSL, libevent, zlib, zstd, xz), each under its own license.</td></tr>
+    <tr><td>jtorctl (The Tor Project / Guardian Project)</td><td>Controls the embedded Tor process.</td></tr>
+    <tr><td>SQLCipher for Android (Zetetic)</td><td>Encrypted database where your contacts and messages are stored.</td></tr>
+  </table>
+  <p><a href="https://gitlab.torproject.org/tpo/core/tor/-/blob/main/LICENSE" target="_blank" rel="noopener">Tor license</a> · <a href="https://github.com/guardianproject/tor-android/blob/master/LICENSE" target="_blank" rel="noopener">tor-android license</a> · <a href="https://github.com/sqlcipher/sqlcipher-android/blob/master/LICENSE.txt" target="_blank" rel="noopener">SQLCipher for Android license</a></p>
+
+  <h2>MIT License</h2>
+  <table>
+    <tr><th>Library</th><th>Purpose in P2P Meseji</th></tr>
+    <tr><td>Bouncy Castle (Legion of the Bouncy Castle)</td><td>Cryptography: Ed25519 identities, X25519 key exchange and message encryption.</td></tr>
+  </table>
+  <p><a href="https://www.bouncycastle.org/about/license/" target="_blank" rel="noopener">Bouncy Castle license</a></p>
+
+  <h2>Apache License 2.0</h2>
+  <p class="intro">The rest of P2P Meseji's foundation is licensed under the Apache License, Version 2.0.</p>
+  <table>
+    <tr><th>Library</th><th>Publisher</th></tr>
+    <tr><td>Kotlin standard library, Kotlin Coroutines</td><td>JetBrains</td></tr>
+    <tr><td>AndroidX Core, AppCompat, Lifecycle, Activity, Navigation, SQLite</td><td>Google / The Android Open Source Project</td></tr>
+    <tr><td>AndroidX Compose (UI, Material 3, Material Icons Extended)</td><td>Google / The Android Open Source Project</td></tr>
+    <tr><td>AndroidX Media3 (ExoPlayer, UI)</td><td>Google / The Android Open Source Project</td></tr>
+    <tr><td>Material Components for Android</td><td>Google</td></tr>
+    <tr><td>ZXing core</td><td>ZXing authors</td></tr>
+    <tr><td>ZXing Android Embedded</td><td>JourneyApps</td></tr>
+  </table>
+  <p><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">Full text of the Apache License 2.0</a></p>
+
+  <a class="back-link" href="index.html">← Back to the Privacy Policy</a>
+  <footer>P2P Meseji — developed by Mendelatech</footer>
+</body>
+</html>

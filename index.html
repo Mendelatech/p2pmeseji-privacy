@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2P Meseji — Privacy Policy</title>
+<link rel="icon" href="p2pmeseji-logo.png">
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: 0.9rem; margin-top: 0; }
+  a { color: #C4540A; }
+  footer { margin-top: 3rem; color: #888; font-size: 0.85rem; }
+  table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; font-size: 0.92rem; }
+  td, th { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+  th { color: #666; font-weight: 600; }
+  select#langSelect { font-size: 0.95rem; padding: 6px 10px; border-radius: 6px; border: 1px solid #ccc; background: #fff; }
+  .lang-block[hidden] { display: none; }
+  .site-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .site-header .logos { display: flex; gap: 10px; }
+  .site-header img { width: 44px; height: 44px; border-radius: 50%; display: block; }
+</style>
+</head>
+<body>
+  <div class="site-header">
+    <div class="logos">
+      <img src="p2pmeseji-logo.png" alt="P2P Meseji" width="44" height="44">
+      <img src="mendelatech-chibi.png" alt="Mendelatech" width="44" height="44">
+    </div>
+    <select id="langSelect" aria-label="Language / Idioma">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+    </select>
+  </div>
+
+  <div id="en" class="lang-block" lang="en">
+    <h1>Privacy Policy — P2P Meseji</h1>
+    <p class="updated">Last updated: September 24, 2026</p>
+    <h2>No servers, no data collection</h2>
+    <p>P2P Meseji is a messaging app that works without servers. Mendelatech has no servers that receive, store or process your messages, your contacts or information about how you use the app. There are no accounts, no analytics, no ads and no trackers. Your data only exists on your device and on the devices of the people you talk to, encrypted.</p>
+    <h2>What data the app handles and where it lives</h2>
+    <table>
+      <tr><th>Data</th><th>Where it's stored</th><th>Who can see it</th></tr>
+      <tr><td>Your display name</td><td>On your device, encrypted</td><td>You and the contacts you add</td></tr>
+      <tr><td>Your cryptographic key (identity)</td><td>On your device, encrypted</td><td>Nobody else: the private key never leaves the device</td></tr>
+      <tr><td>Your Tor address (.onion)</td><td>On your device, encrypted</td><td>The contacts you add (it's inside your QR code)</td></tr>
+      <tr><td>Contacts</td><td>On your device, encrypted</td><td>Only you</td></tr>
+      <tr><td>Messages, photos, videos and files</td><td>On your device and the recipient's, encrypted</td><td>Only you and the recipient</td></tr>
+    </table>
+    <p>Everything is stored in an encrypted database (SQLCipher) and in encrypted files, with a key protected by the Android Keystore. The app disables Android's automatic backups, so your data is not uploaded to Google's cloud.</p>
+    <h2>How messages travel</h2>
+    <p>Messages go directly from your device to your contact's device, end-to-end encrypted, over one of two routes:</p>
+    <ul>
+      <li><strong>Local network (Wi-Fi):</strong> if you're both on the same network, the app announces itself there with a random identifier derived from your public key. Other devices on that network can see that there's a device running P2P Meseji, but not who you are or who you talk to.</li>
+      <li><strong>Tor network:</strong> if you're not on the same network, the connection goes through the anonymous <a href="https://www.torproject.org/" target="_blank" rel="noopener">Tor</a> network. Tor relays can't read the content or tell who is talking to whom. To work, the app connects to the Tor network's public directory servers, which are not operated by Mendelatech.</li>
+    </ul>
+    <p>If your contact is offline, the message waits on your device until you're both online. There is no intermediate server that stores it.</p>
+    <h2>Permissions used</h2>
+    <p>P2P Meseji uses the following device permissions: camera (only to scan contacts' QR codes; camera images are not stored or sent), notifications (to tell you about new messages, generated on your device), internet and network / Wi-Fi state (to connect with your contacts over Tor or the local network) and a foreground service (so your contacts can deliver messages to you while the app isn't on screen).</p>
+    <h2>Editing and deleting messages</h2>
+    <p>You can edit your messages or delete them for both sides during the first hour after sending them. The deletion is applied on your contact's device when you're both online; we can't guarantee your contact didn't take a screenshot or a copy first.</p>
+    <h2>Files you export</h2>
+    <p>If you save a photo, video or file outside the app, it is saved unencrypted to the location you choose, and from then on it's outside P2P Meseji's control.</p>
+    <h2>Retention and deletion</h2>
+    <p>Data is kept on your device until you delete it. You can delete messages or contacts from within the app. Uninstalling the app permanently deletes your identity, your contacts and your messages. There is no copy anywhere else, so they cannot be recovered.</p>
+    <h2>Legal notice</h2>
+    <p>You are responsible for the content you send and for who you share your QR code with: anyone who scans it can add you as a contact. The app is not directed at children under 13 and does not knowingly collect data from anyone, including children.</p>
+    <h2>Changes to this policy</h2>
+    <p>If we change this policy, we will publish the new version on this same page with its update date.</p>
+    <h2>Contact</h2>
+    <p>Questions or requests about your data? Contact: <a href="mailto:mendelatech.greeting513@passinbox.com">mendelatech.greeting513@passinbox.com</a></p>
+    <p><a href="licenses.html">Open source licenses</a></p>
+    <p><a href="https://mendelatech.github.io/" target="_blank" rel="noopener">Our links</a></p>
+    <footer>P2P Meseji — developed by Mendelatech</footer>
+  </div>
+
+  <div id="es" class="lang-block" lang="es" hidden>
+    <h1>Política de privacidad — P2P Meseji</h1>
+    <p class="updated">Última actualización: 24 de septiembre de 2026</p>
+    <h2>Sin servidores, sin recogida de datos</h2>
+    <p>P2P Meseji es una app de mensajería que funciona sin servidores. Mendelatech no tiene servidores que reciban, guarden o procesen tus mensajes, tus contactos ni información sobre cómo usas la app. No hay cuentas, ni analíticas, ni anuncios, ni rastreadores. Tus datos solo existen en tu dispositivo y en los de las personas con las que hablas, cifrados.</p>
+    <h2>Qué datos maneja la app y dónde viven</h2>
+    <table>
+      <tr><th>Dato</th><th>Dónde se guarda</th><th>Quién puede verlo</th></tr>
+      <tr><td>Tu nombre visible</td><td>En tu dispositivo, cifrado</td><td>Tú y los contactos que añadas</td></tr>
+      <tr><td>Tu clave criptográfica (identidad)</td><td>En tu dispositivo, cifrada</td><td>Nadie más: la clave privada nunca sale del dispositivo</td></tr>
+      <tr><td>Tu dirección Tor (.onion)</td><td>En tu dispositivo, cifrada</td><td>Los contactos que añadas (va dentro de tu código QR)</td></tr>
+      <tr><td>Contactos</td><td>En tu dispositivo, cifrados</td><td>Solo tú</td></tr>
+      <tr><td>Mensajes, fotos, vídeos y archivos</td><td>En tu dispositivo y en el del destinatario, cifrados</td><td>Solo tú y el destinatario</td></tr>
+    </table>
+    <p>Todo se guarda en una base de datos cifrada (SQLCipher) y en archivos cifrados, con una clave protegida por el almacén de claves de Android (Android Keystore). La app desactiva las copias de seguridad automáticas de Android, así que tus datos no se suben a la nube de Google.</p>
+    <h2>Cómo viajan los mensajes</h2>
+    <p>Los mensajes van directamente de tu dispositivo al de tu contacto, cifrados de extremo a extremo, por una de estas dos vías:</p>
+    <ul>
+      <li><strong>Red local (WiFi):</strong> si ambos estáis en la misma red, la app se anuncia en ella con un identificador aleatorio derivado de tu clave pública. Otros dispositivos de esa red pueden ver que hay un dispositivo con P2P Meseji, pero no quién eres ni con quién hablas.</li>
+      <li><strong>Red Tor:</strong> si no estáis en la misma red, la conexión pasa por la red anónima <a href="https://www.torproject.org/" target="_blank" rel="noopener">Tor</a>. Los nodos de Tor no pueden leer el contenido ni saber quién habla con quién. Para funcionar, la app se conecta a los servidores de directorio públicos de la red Tor, que no pertenecen a Mendelatech.</li>
+    </ul>
+    <p>Si tu contacto no está conectado, el mensaje se queda esperando en tu dispositivo hasta que ambos estéis en línea. No hay ningún servidor intermedio que lo guarde.</p>
+    <h2>Permisos utilizados</h2>
+    <p>P2P Meseji utiliza los siguientes permisos del dispositivo: cámara (solo para escanear códigos QR de contactos; las imágenes de la cámara no se guardan ni se envían), notificaciones (para avisarte de mensajes nuevos, generadas en tu dispositivo), acceso a internet y al estado de la red / WiFi (para conectar con tus contactos por Tor o por la red local) y un servicio en primer plano (para que tus contactos puedan entregarte mensajes mientras la app no está en pantalla).</p>
+    <h2>Editar y borrar mensajes</h2>
+    <p>Puedes editar tus mensajes o borrarlos para ambos durante la primera hora después de enviarlos. El borrado se aplica en el dispositivo de tu contacto cuando los dos estéis conectados; no podemos garantizar que tu contacto no haya hecho antes una captura o una copia.</p>
+    <h2>Archivos que exportas</h2>
+    <p>Si guardas una foto, un vídeo o un archivo fuera de la app, se guarda sin cifrar en la ubicación que elijas, y a partir de ahí queda fuera del control de P2P Meseji.</p>
+    <h2>Conservación y borrado</h2>
+    <p>Los datos se conservan en tu dispositivo hasta que los borres. Puedes borrar mensajes o contactos desde la app. Al desinstalar la app se borran para siempre tu identidad, tus contactos y tus mensajes. No existe ninguna copia en otro sitio, así que no se pueden recuperar.</p>
+    <h2>Aviso legal</h2>
+    <p>Eres responsable del contenido que envías y de con quién compartes tu código QR: cualquiera que lo escanee podrá añadirte como contacto. La app no está dirigida a menores de 13 años y no recoge a sabiendas datos de nadie, tampoco de menores.</p>
+    <h2>Cambios en esta política</h2>
+    <p>Si cambiamos esta política, publicaremos la nueva versión en esta misma página con su fecha de actualización.</p>
+    <h2>Contacto</h2>
+    <p>¿Dudas o solicitudes sobre tus datos? Contacto: <a href="mailto:mendelatech.greeting513@passinbox.com">mendelatech.greeting513@passinbox.com</a></p>
+    <p><a href="licenses.html">Licencias de código abierto</a></p>
+    <p><a href="https://mendelatech.github.io/" target="_blank" rel="noopener">Nuestros enlaces</a></p>
+    <footer>P2P Meseji — desarrollado por Mendelatech</footer>
+  </div>
+
+<script>
+(function () {
+  var supported = ["en","es"];
+  var select = document.getElementById("langSelect");
+
+  function normalize(tag) {
+    if (!tag) return null;
+    var base = tag.toLowerCase().split("-")[0];
+    return supported.indexOf(base) !== -1 ? base : null;
+  }
+
+  function show(code) {
+    supported.forEach(function (c) {
+      var el = document.getElementById(c);
+      if (el) el.hidden = (c !== code);
+    });
+    select.value = code;
+    document.documentElement.lang = code;
+  }
+
+  var browserMatch = null;
+  if (navigator.languages) {
+    for (var i = 0; i < navigator.languages.length && !browserMatch; i++) {
+      browserMatch = normalize(navigator.languages[i]);
+    }
+  }
+  if (!browserMatch) browserMatch = normalize(navigator.language);
+
+  show(browserMatch || "en");
+
+  select.addEventListener("change", function () {
+    show(select.value);
+  });
+})();
+</script>
+</body>
+</html>
