@@ -36,7 +36,7 @@
 
   <div id="en" class="lang-block" lang="en">
     <h1>Privacy Policy — P2P Meseji</h1>
-    <p class="updated">Last updated: September 24, 2026</p>
+    <p class="updated">Last updated: September 25, 2026</p>
     <h2>No servers, no data collection</h2>
     <p>P2P Meseji is a messaging app that works without servers. Mendelatech has no servers that receive, store or process your messages, your contacts or information about how you use the app. There are no accounts, no analytics, no ads and no trackers. Your data only exists on your device and on the devices of the people you talk to, encrypted.</p>
     <h2>What data the app handles and where it lives</h2>
@@ -46,7 +46,9 @@
       <tr><td>Your cryptographic key (identity)</td><td>On your device, encrypted</td><td>Nobody else: the private key never leaves the device</td></tr>
       <tr><td>Your Tor address (.onion)</td><td>On your device, encrypted</td><td>The contacts you add (it's inside your QR code)</td></tr>
       <tr><td>Contacts</td><td>On your device, encrypted</td><td>Only you</td></tr>
-      <tr><td>Messages, photos, videos and files</td><td>On your device and the recipient's, encrypted</td><td>Only you and the recipient</td></tr>
+      <tr><td>Messages, photos, videos, voice messages, stickers and files</td><td>On your device and the recipient's, encrypted</td><td>Only you and the recipient</td></tr>
+      <tr><td>Notes (chats with yourself)</td><td>On your device only, encrypted</td><td>Only you: they are never sent</td></tr>
+      <tr><td>Blocked contacts (their public key)</td><td>On your device, encrypted</td><td>Only you</td></tr>
     </table>
     <p>Everything is stored in an encrypted database (SQLCipher) and in encrypted files, with a key protected by the Android Keystore. The app disables Android's automatic backups, so your data is not uploaded to Google's cloud.</p>
     <h2>How messages travel</h2>
@@ -57,27 +59,29 @@
     </ul>
     <p>If your contact is offline, the message waits on your device until you're both online. There is no intermediate server that stores it.</p>
     <h2>Permissions used</h2>
-    <p>P2P Meseji uses the following device permissions: camera (only to scan contacts' QR codes; camera images are not stored or sent), notifications (to tell you about new messages, generated on your device), internet and network / Wi-Fi state (to connect with your contacts over Tor or the local network) and a foreground service (so your contacts can deliver messages to you while the app isn't on screen).</p>
+    <p>P2P Meseji uses the following device permissions: camera (to scan contacts' QR codes and to take photos you decide to send; the photo is encrypted as soon as it's taken and only goes to the contact you send it to), microphone (only while you record a voice message; the recording is encrypted and only goes to the contact you send it to), notifications (to tell you about new messages, generated on your device), internet and network / Wi-Fi state (to connect with your contacts over Tor or the local network) and a foreground service (so your contacts can deliver messages to you while the app isn't on screen).</p>
     <h2>Editing and deleting messages</h2>
     <p>You can edit your messages or delete them for both sides during the first hour after sending them. The deletion is applied on your contact's device when you're both online; we can't guarantee your contact didn't take a screenshot or a copy first.</p>
+    <h2>Blocking and reporting</h2>
+    <p>Deleting a contact also blocks them: they can't connect to you, write to you or add you again unless you add them again by scanning their code. Because messages are end-to-end encrypted and never go through our servers, Mendelatech cannot see them or moderate them. You can report a contact from the chat menu: the app opens an email to <a href="mailto:mendelatech@proton.me">mendelatech@proton.me</a> with that contact's security fingerprint, and you decide what to write and whether to attach screenshots. We use reports only to handle them and, where the law requires it, to cooperate with the authorities.</p>
     <h2>Files you export</h2>
     <p>If you save a photo, video or file outside the app, it is saved unencrypted to the location you choose, and from then on it's outside P2P Meseji's control.</p>
     <h2>Retention and deletion</h2>
     <p>Data is kept on your device until you delete it. You can delete messages or contacts from within the app. Uninstalling the app permanently deletes your identity, your contacts and your messages. There is no copy anywhere else, so they cannot be recovered.</p>
     <h2>Legal notice</h2>
-    <p>You are responsible for the content you send and for who you share your QR code with: anyone who scans it can add you as a contact. The app is not directed at children under 13 and does not knowingly collect data from anyone, including children.</p>
+    <p>You are responsible for the content you send and for who you share your QR code with: anyone who scans it can add you as a contact. The app is not directed at children under 13 and does not knowingly collect data from anyone, including children. Use of the app is subject to the <a href="terms.html">terms of use</a>; see also our <a href="child-safety.html">child safety standards</a>.</p>
     <h2>Changes to this policy</h2>
     <p>If we change this policy, we will publish the new version on this same page with its update date.</p>
     <h2>Contact</h2>
     <p>Questions or requests about your data? Contact: <a href="mailto:mendelatech.greeting513@passinbox.com">mendelatech.greeting513@passinbox.com</a></p>
-    <p><a href="licenses.html">Open source licenses</a></p>
+    <p><a href="terms.html">Terms of use</a> · <a href="child-safety.html">Child safety standards</a> · <a href="licenses.html">Open source licenses</a></p>
     <p><a href="https://mendelatech.github.io/" target="_blank" rel="noopener">Our links</a></p>
     <footer>P2P Meseji — developed by Mendelatech</footer>
   </div>
 
   <div id="es" class="lang-block" lang="es" hidden>
     <h1>Política de privacidad — P2P Meseji</h1>
-    <p class="updated">Última actualización: 24 de septiembre de 2026</p>
+    <p class="updated">Última actualización: 25 de septiembre de 2026</p>
     <h2>Sin servidores, sin recogida de datos</h2>
     <p>P2P Meseji es una app de mensajería que funciona sin servidores. Mendelatech no tiene servidores que reciban, guarden o procesen tus mensajes, tus contactos ni información sobre cómo usas la app. No hay cuentas, ni analíticas, ni anuncios, ni rastreadores. Tus datos solo existen en tu dispositivo y en los de las personas con las que hablas, cifrados.</p>
     <h2>Qué datos maneja la app y dónde viven</h2>
@@ -87,7 +91,9 @@
       <tr><td>Tu clave criptográfica (identidad)</td><td>En tu dispositivo, cifrada</td><td>Nadie más: la clave privada nunca sale del dispositivo</td></tr>
       <tr><td>Tu dirección Tor (.onion)</td><td>En tu dispositivo, cifrada</td><td>Los contactos que añadas (va dentro de tu código QR)</td></tr>
       <tr><td>Contactos</td><td>En tu dispositivo, cifrados</td><td>Solo tú</td></tr>
-      <tr><td>Mensajes, fotos, vídeos y archivos</td><td>En tu dispositivo y en el del destinatario, cifrados</td><td>Solo tú y el destinatario</td></tr>
+      <tr><td>Mensajes, fotos, vídeos, audios, stickers y archivos</td><td>En tu dispositivo y en el del destinatario, cifrados</td><td>Solo tú y el destinatario</td></tr>
+      <tr><td>Notas (chats contigo mismo)</td><td>Solo en tu dispositivo, cifradas</td><td>Solo tú: nunca se envían</td></tr>
+      <tr><td>Contactos bloqueados (su clave pública)</td><td>En tu dispositivo, cifrados</td><td>Solo tú</td></tr>
     </table>
     <p>Todo se guarda en una base de datos cifrada (SQLCipher) y en archivos cifrados, con una clave protegida por el almacén de claves de Android (Android Keystore). La app desactiva las copias de seguridad automáticas de Android, así que tus datos no se suben a la nube de Google.</p>
     <h2>Cómo viajan los mensajes</h2>
@@ -98,20 +104,22 @@
     </ul>
     <p>Si tu contacto no está conectado, el mensaje se queda esperando en tu dispositivo hasta que ambos estéis en línea. No hay ningún servidor intermedio que lo guarde.</p>
     <h2>Permisos utilizados</h2>
-    <p>P2P Meseji utiliza los siguientes permisos del dispositivo: cámara (solo para escanear códigos QR de contactos; las imágenes de la cámara no se guardan ni se envían), notificaciones (para avisarte de mensajes nuevos, generadas en tu dispositivo), acceso a internet y al estado de la red / WiFi (para conectar con tus contactos por Tor o por la red local) y un servicio en primer plano (para que tus contactos puedan entregarte mensajes mientras la app no está en pantalla).</p>
+    <p>P2P Meseji utiliza los siguientes permisos del dispositivo: cámara (para escanear códigos QR de contactos y para hacer fotos que decidas enviar; la foto se cifra nada más hacerla y solo va al contacto al que se la envías), micrófono (solo mientras grabas un audio; la grabación se cifra y solo va al contacto al que se la envías), notificaciones (para avisarte de mensajes nuevos, generadas en tu dispositivo), acceso a internet y al estado de la red / WiFi (para conectar con tus contactos por Tor o por la red local) y un servicio en primer plano (para que tus contactos puedan entregarte mensajes mientras la app no está en pantalla).</p>
     <h2>Editar y borrar mensajes</h2>
     <p>Puedes editar tus mensajes o borrarlos para ambos durante la primera hora después de enviarlos. El borrado se aplica en el dispositivo de tu contacto cuando los dos estéis conectados; no podemos garantizar que tu contacto no haya hecho antes una captura o una copia.</p>
+    <h2>Bloquear y denunciar</h2>
+    <p>Eliminar un contacto también lo bloquea: no puede conectarse contigo, escribirte ni volver a añadirte salvo que tú lo añadas de nuevo escaneando su código. Como los mensajes están cifrados de extremo a extremo y nunca pasan por nuestros servidores, Mendelatech no puede verlos ni moderarlos. Puedes denunciar a un contacto desde el menú del chat: la app abre un correo dirigido a <a href="mailto:mendelatech@proton.me">mendelatech@proton.me</a> con la huella de seguridad de ese contacto, y tú decides qué escribir y si adjuntas capturas. Usamos las denuncias solo para atenderlas y, cuando la ley lo exija, para colaborar con las autoridades.</p>
     <h2>Archivos que exportas</h2>
     <p>Si guardas una foto, un vídeo o un archivo fuera de la app, se guarda sin cifrar en la ubicación que elijas, y a partir de ahí queda fuera del control de P2P Meseji.</p>
     <h2>Conservación y borrado</h2>
     <p>Los datos se conservan en tu dispositivo hasta que los borres. Puedes borrar mensajes o contactos desde la app. Al desinstalar la app se borran para siempre tu identidad, tus contactos y tus mensajes. No existe ninguna copia en otro sitio, así que no se pueden recuperar.</p>
     <h2>Aviso legal</h2>
-    <p>Eres responsable del contenido que envías y de con quién compartes tu código QR: cualquiera que lo escanee podrá añadirte como contacto. La app no está dirigida a menores de 13 años y no recoge a sabiendas datos de nadie, tampoco de menores.</p>
+    <p>Eres responsable del contenido que envías y de con quién compartes tu código QR: cualquiera que lo escanee podrá añadirte como contacto. La app no está dirigida a menores de 13 años y no recoge a sabiendas datos de nadie, tampoco de menores. El uso de la app está sujeto a las <a href="terms.html">condiciones de uso</a>; consulta también nuestras <a href="child-safety.html">normas de protección infantil</a>.</p>
     <h2>Cambios en esta política</h2>
     <p>Si cambiamos esta política, publicaremos la nueva versión en esta misma página con su fecha de actualización.</p>
     <h2>Contacto</h2>
     <p>¿Dudas o solicitudes sobre tus datos? Contacto: <a href="mailto:mendelatech.greeting513@passinbox.com">mendelatech.greeting513@passinbox.com</a></p>
-    <p><a href="licenses.html">Licencias de código abierto</a></p>
+    <p><a href="terms.html">Condiciones de uso</a> · <a href="child-safety.html">Protección infantil</a> · <a href="licenses.html">Licencias de código abierto</a></p>
     <p><a href="https://mendelatech.github.io/" target="_blank" rel="noopener">Nuestros enlaces</a></p>
     <footer>P2P Meseji — desarrollado por Mendelatech</footer>
   </div>
